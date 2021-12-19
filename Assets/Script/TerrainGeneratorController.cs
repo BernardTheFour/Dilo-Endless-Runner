@@ -88,8 +88,6 @@ public class TerrainGeneratorController : MonoBehaviour
         // change the map every 10 score
         int currScore = (int)score.GetCurrentScore() % 30;
 
-        Debug.Log("Score: " + currScore);
-
         if (currScore <= 10)
         {
             newTerrain = Instantiate(terrainTemplatesA[Random.Range(0, terrainTemplatesA.Count)].gameObject, transform);
